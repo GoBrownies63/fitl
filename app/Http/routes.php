@@ -22,3 +22,7 @@ Route::get('welcome', function () {
 Route::get('hello', function () {
     return view('hello', ['name' => 'Jake']);
 });
+
+Route::get('about', 'PageController@about');
+
+Route::get('contact', 'PageController@contact');
